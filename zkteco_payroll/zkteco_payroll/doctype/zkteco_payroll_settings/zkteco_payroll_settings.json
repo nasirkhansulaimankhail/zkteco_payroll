@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-02 19:10:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sync_section",
+  "enable_zkteco_sync",
+  "machine_ip",
+  "machine_port",
+  "machine_password",
+  "sync_from_date",
+  "checkin_device_id",
+  "auto_create_employee_checkin",
+  "default_hourly_salary_component",
+  "last_sync_at",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "sync_section",
+   "fieldtype": "Section Break",
+   "label": "ZKTeco Sync"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_zkteco_sync",
+   "fieldtype": "Check",
+   "label": "Enable ZKTeco Sync"
+  },
+  {
+   "fieldname": "machine_ip",
+   "fieldtype": "Data",
+   "label": "Machine IP",
+   "reqd": 1
+  },
+  {
+   "default": "4370",
+   "fieldname": "machine_port",
+   "fieldtype": "Int",
+   "label": "Machine Port",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "machine_password",
+   "fieldtype": "Password",
+   "label": "Machine Password"
+  },
+  {
+   "description": "Only logs on or after this date will be considered.",
+   "fieldname": "sync_from_date",
+   "fieldtype": "Date",
+   "label": "Sync Logs From Date"
+  },
+  {
+   "default": "ZKTeco",
+   "fieldname": "checkin_device_id",
+   "fieldtype": "Data",
+   "label": "Employee Checkin Device ID"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_create_employee_checkin",
+   "fieldtype": "Check",
+   "label": "Auto Create Employee Checkin"
+  },
+  {
+   "fieldname": "default_hourly_salary_component",
+   "fieldtype": "Link",
+   "label": "Default Hourly Salary Component",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "last_sync_at",
+   "fieldtype": "Datetime",
+   "label": "Last Sync At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-04-02 19:10:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZKTeco Payroll",
+ "name": "ZKTeco Payroll Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "HR Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

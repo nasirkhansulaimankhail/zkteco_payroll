@@ -1,0 +1,25 @@
+{
+ "content": null,
+ "creation": "2026-04-02 22:45:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-04-02 22:45:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZKTeco Payroll",
+ "name": "zkteco-attendance-history",
+ "owner": "Administrator",
+ "page_name": "zkteco-attendance-history",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "title": "ZKTeco Attendance History"
+}
